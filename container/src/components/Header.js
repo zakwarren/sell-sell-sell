@@ -28,7 +28,7 @@ export const Header = ({ signedIn, onSignOut }) => {
           component={RouterLink}
           to="/"
         >
-          App
+          Sell Zone
         </Typography>
         <Button
           color="primary"

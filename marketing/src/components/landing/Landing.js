@@ -20,7 +20,7 @@ export const Album = () => {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
+    <>
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -32,7 +32,7 @@ export const Album = () => {
               color="textPrimary"
               gutterBottom
             >
-              Home Page
+              Sell! Sell! Sell!
             </Typography>
             <Typography
               variant="h5"
@@ -40,9 +40,12 @@ export const Album = () => {
               color="textSecondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              We sell nothing! That's right; absolutely nothing! We still want
+              you to give us your money and in return you'll receive the brief
+              rush that accompanies making a purchase, followed by nothing. What
+              a deal! You'd be a fool to miss it! All the cool people are doing
+              it. All your friends are doing it. So what are you waiting for?
+              Buy now!
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justifyContent="center">
@@ -73,15 +76,15 @@ export const Album = () => {
                   <CardMedia
                     className={classes.cardMedia}
                     image="https://source.unsplash.com/random"
-                    title="Image title"
+                    title="Random image to tempt you in"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Nothing
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
+                      There's nothing here, but don't forget to give us your
+                      hard-earned cash.
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -101,7 +104,7 @@ export const Album = () => {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          Sell Zone
         </Typography>
         <Typography
           variant="subtitle1"
@@ -109,11 +112,11 @@ export const Album = () => {
           color="textSecondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          The trusted centre of selling you nothing
         </Typography>
         <Copyright />
       </footer>
       {/* End footer */}
-    </React.Fragment>
+    </>
   );
 };

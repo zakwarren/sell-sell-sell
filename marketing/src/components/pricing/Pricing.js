@@ -40,16 +40,16 @@ export const Pricing = () => {
           color="textSecondary"
           component="p"
         >
-          Quickly build an effective pricing table for your potential customers
-          with this layout. It&apos;s built with default Material-UI components
-          with little customization.
+          Check out our subscription options. Send us a regular amount of money
+          and you'll get access to no exclusive deals and no extras. A regular
+          source of nothing could be a perfect gift to your friends, family, or
+          even yourself. Check out our plans below.
         </Typography>
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
-            // Enterprise card is full width at sm breakpoint
             <Grid
               item
               key={tier.title}
