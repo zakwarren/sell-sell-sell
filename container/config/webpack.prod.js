@@ -8,7 +8,7 @@ const domain = process.env.PRODUCTION_DOMAIN;
 
 const prodConfig = {
   mode: "production",
-  output: { filename: "[name].[contenthash].js" },
+  output: { filename: "[name].[contenthash].js", publicPath: "/" },
   plugins: [
     new ModuleFederationPlugin({
       name: "container",
