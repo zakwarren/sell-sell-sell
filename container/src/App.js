@@ -1,13 +1,13 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import { MarketingApp } from "./components";
+import { Header, MarketingApp } from "./components";
 
 const App = () => (
-  <main>
-    <h1>Hello there</h1>
-    <hr />
+  <BrowserRouter>
+    <Header />
     <MarketingApp />
-  </main>
+  </BrowserRouter>
 );
 
 export default App;
