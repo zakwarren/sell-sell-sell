@@ -1,9 +1,13 @@
 import React from "react";
 
-import { mount as mountMarketing } from "marketing/MarketingApp";
+import { MarketingApp } from "./components";
 
-console.log(mountMarketing);
-
-const App = () => <h1>Hello there</h1>;
+const App = () => (
+  <main>
+    <h1>Hello there</h1>
+    <hr />
+    <MarketingApp />
+  </main>
+);
 
 export default App;
