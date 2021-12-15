@@ -15,8 +15,13 @@ const AuthApp = () => {
       }
     };
 
+    const onSignIn = () => {
+      console.log("Signed in!");
+    };
+
     const { onParentNavigate } = mount(ref.current, {
       onNavigate,
+      onSignIn,
       initialPath: history.location.pathname,
     });
 
