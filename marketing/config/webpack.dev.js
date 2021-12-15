@@ -7,6 +7,7 @@ const packageJson = require("../package.json");
 
 const devConfig = {
   mode: "development",
+  devtool: "eval-source-map",
   devServer: {
     port: 8081,
     historyApiFallback: {
