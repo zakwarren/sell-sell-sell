@@ -15,7 +15,10 @@ export const MarketingApp = () => {
       }
     };
 
-    const { onParentNavigate } = mount(ref.current, { onNavigate });
+    const { onParentNavigate } = mount(ref.current, {
+      onNavigate,
+      initialPath: history.location.pathname,
+    });
 
     history.listen(onParentNavigate);
   }, []);
