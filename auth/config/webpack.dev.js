@@ -5,13 +5,16 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const commonConfig = require("./webpack.common");
 const packageJson = require("../package.json");
 
+const port = 8082;
+
 const devConfig = {
   mode: "development",
+  output: { publicPath: `http://localhost:${port}/` },
   devtool: "eval-source-map",
   devServer: {
-    port: 8082,
+    port: port,
     historyApiFallback: {
-      index: "index.html",
+      index: "/index.html",
     },
   },
   plugins: [
