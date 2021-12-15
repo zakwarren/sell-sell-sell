@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 
-import { Header } from "./components";
+import { Header, Progress } from "./components";
 
 const generateClassName = createGenerateClassName({ productionPrefix: "co" });
 
@@ -13,7 +13,7 @@ const App = () => (
   <StylesProvider generateClassName={generateClassName}>
     <BrowserRouter>
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Progress />}>
         <Switch>
           <Route path="/auth" component={AuthApp} />
           <Route path="/" component={MarketingApp} />
